@@ -12,12 +12,22 @@ var botConnectorOptions = {
 var connector = new builder.ChatConnector(botConnectorOptions);
 var bot = new builder.UniversalBot(connector);
 
-bot.dialog('/', function (session) {
-    
-    //respond with user's message
-    //this will send you said+what ever user says.
-    session.send("You just said " + session.message.text);
-});
+//Waterfall + Dialog
+bot.dialog('/',[
+    function(session) {
+        builder.Prompts.text(session, 'Hello , what is your name?')
+    },
+    function(session, args, next){
+        session.send('Hello '+ args.response+ ', nice to meet you '  ); //Waterfall
+        session.beginDialog('/step2')
+    }
+
+]);
+
+bot.dialog('/step2', function(session) { //step for Dialog
+    session.send("How can I help you?");
+    session.endConversation();
+})
 
 // Setup Restify Server
 var server = restify.createServer();
