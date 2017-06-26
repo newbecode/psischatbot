@@ -1,0 +1,23 @@
+{
+  "name": "psischatbot",
+  "version": "1.0.0",
+  "description": "Chatbot project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newbecode/psischatbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newbecode/psischatbot/issues"
+  },
+  "homepage": "https://github.com/newbecode/psischatbot#readme",
+  "dependencies": {
+    "botbuilder": "^3.8.4",
+    "restify": "^4.3.0"
+  }
+}
