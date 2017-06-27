@@ -1,0 +1,19 @@
+/* This is custom CSS stylesheet */
+html, body {
+    height: 100%
+}
+    .wrap {
+    height: auto !important;
+    height: 100%;
+    
+    margin: 0 auto -60px;
+    }
+    .push, .footer {
+     height: 60px;
+    }
+    .push, .footer {
+        height: 60px;
+    }
+    .footer {
+    background-color: #f5f5f5;
+    }

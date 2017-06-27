@@ -1,4 +1,6 @@
-
+// IMPORTANT LINE
+ app.use(express.static(__dirname + '/public'));
+ 
 var restify = require('restify');
 var builder = require('botbuilder');
 

@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/newbecode/psischatbot#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "botbuilder": "^3.8.4",
     "restify": "^4.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0"
+  }
 }
